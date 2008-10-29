@@ -1,0 +1,47 @@
+<h1>Kandidati</h1>
+<h2>Ukupan broj glasova: <%= @vote_sum %></h2>
+
+<% form_tag '', :method => :get do %>
+	<%= select_tag :field, options_for_select([['ime', 'first_name'],['prezime', 'last_name'],['glasovi', 'votes']]) %>
+	<%= submit_tag 'sortiraj' %>
+<% end %>
+
+<table>
+  <tr>
+    <th>Ime</th>
+    <th>Prezime</th>
+    <th>Glasovi</th>
+    <th>Postotak</th>
+	<th colspan="6">Akcije</th>
+  </tr>
+
+<% for candidate in @candidates %>
+  <tr>
+	<td><%=h candidate.last_name %></td>
+    <td><%=h candidate.first_name %></td>
+    <td><%=h candidate.votes %></td>
+    <td><%=h (candidate.votes * 100.0/@vote_sum ).round 1 %> %</td>
+
+
+
+    <td><%= link_to 'Glasaj', vote_candidate_path(candidate) %></td>
+
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+    <td><%= link_to 'Oduzmi glas', unvote_candidate_path(candidate), :confirm => 'Are you sure?', :method => :delete %></td>
+
+    <td><%= link_to 'Prikaži', candidate %></td>
+    <td><%= link_to 'Izmjeni', edit_candidate_path(candidate) %></td>
+
+
+    <td><%= link_to 'Izbriši', candidate, :confirm => 'Are you sure?', :method => :delete %></td>
+
+
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novi kandidat', new_candidate_path %>

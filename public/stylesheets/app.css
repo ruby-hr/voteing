@@ -1,0 +1,298 @@
+body {padding:0; margin:0; font-size:11px; color:#000; font-family:"Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Helvetica, Arial, sans-serif, "Bitstream Vera Sans";}
+
+.containerr { background: url(/stylesheets/blueprint/lib/grid.png); }
+
+
+#header { padding-bottom: .5em;}
+#nav a {padding: 0 15px 0px 0; text-transform:uppercase; font-size:10px;}
+#nav li { margin:0; padding: 0;}
+
+a, a:link, a:visited {color: #7F7F7F; text-decoration: none;}
+a:hover {color: #000;}
+
+
+h1,h2,h3,h4,h5,h6, div.logo a { 
+  color: #354e74; 
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Helvetica, Arial, sans-serif, "Bitstream Vera Sans"; 
+}
+
+label { cursor: pointer;}
+
+a img { border: 1px solid #eee; }
+
+ div.logo:hover a { 
+  color: #354e74; 
+}
+
+
+a#logo img { border:none;}
+
+/* ul {list-style-type: none; padding: 0; margin: 0;} */
+
+.box {border: 0px solid #eee; background: #fff; padding:1em; padding-top: 0;}
+.admin-box {border: 1px dotted #aaa; background: #fff; padding:.5em;}
+.declaration-box {border: 1px dotted #aaa; background: #dee7ec; padding: 1em; z-index: 100; position:relative;}
+.filled-box {border: 1px dotted #aaa; background: #dee7ec; padding: .5em; z-index: 100; position:relative;}
+
+#small-basket table { width: 100%;}
+
+#products li { border-bottom: 0px solid #eee; }
+#products a { text-transform:uppercase; font-size:12px;}
+#products a.selected { border: 1px dotted #666; padding: 0; margin: 0; background-color: #eee;}
+
+/* album */
+
+.album ul li img { width: 75px;}
+.album ul li { padding:.5em;}
+
+/* manufacturers */
+
+.manufacturers, .categories { font-weight: bold; background: #fff; height: 40px;}
+h2.box-title {border-bottom: 1px dotted #aaa; background: #fff; margin-bottom: .5em;}
+
+/* edit forms */
+
+
+.edit h1, .edit h2, .edit h3, .edit h4, .edit h5, .edit h6, .edit label{
+	color: #a51122;
+	}
+
+.field-required {
+	background: url(/images/required.gif) center left no-repeat;
+	padding: 0 0 0 1em;
+	color: White;
+	}
+
+/* other */
+
+.warn { color: red}
+.green { color: green}
+
+.discreet { 
+	font-size: 90%;
+	color: #354e74;
+	margin: 0 0 0.2em 0;
+	}
+	
+.discreet:hover { color: #333}
+.line-through { text-decoration: line-through; color: black;}
+
+input[type='submit'] { border: 1px solid #ccc; background: #fff}
+input[type='submit']:hover { border: 1px solid #ccc; background: #eee}
+
+#small-basket input[type='submit'] { padding: 0px 2px 1px 2px; margin: 0;}
+
+#buttons form { display: inline; }
+
+.half { width: 50%; }
+.redbox { background: white; padding: 1em;}
+
+div p ul li { margin: 2em; }
+
+.strong { font-weight: bold; }
+
+td { vertical-align: middle }
+tr.row-odd td {background: #fff}
+tr.row-even td {background: #eee}
+
+
+a.no-underline, ul li a, span a { text-decoration: none; }
+
+.no-border, table.no-border, table.no-border td { border: none; }
+
+
+.inline, ul.inline li, table.inline { display: inline; }
+.block, .block label { display: block; }
+
+.wide { width: 100%; }
+
+#calendar img { margin-bottom: -3px; }
+
+.blank-button { border: none; cursor: pointer; background-color: transparent; }
+.in-basket { border: 1px dotted #bbb; padding: 0 4px; font-size: 11px; background: #eee; color: #817134; border-color: #999;}
+
+.left        { margin-left:0; padding-left:0; }
+.right     { margin-right:0; padding-right:0; }
+
+.reset { margin:0; padding:0; }
+
+
+.bottom-border {border-bottom: 1px solid #999;}
+
+
+
+.padding-left { padding-left: .5em; }
+.padding-right { padding-right: .5em; }
+.margin-right { margin-right: .5em; }
+
+
+ul.trail li { padding-right: 1em;}
+
+
+.popup-effect {
+  background:#11455A;
+  opacity: 0.2;
+}
+
+
+
+ul.parent {list-style-type: none; padding: 0; margin: 0}
+
+ul.child {list-style-type: none; padding: 0 0 0 1em; margin: 0}
+
+td.vertical-top {vertical-align: top}
+
+
+.logo a, .logo a:hover { color: #999;}
+
+/* admin */
+
+/* admin pics */
+.pic {
+  border: 1px dotted #999; float: left; width: 100px; padding: 2px; margin: 0 2px 2px 0
+}
+
+
+
+
+/* FORMS */
+
+fieldset { border: 1px solid #ccc; }
+legend { background: #fff; }
+textarea, input[type='text'], select { border: 1px solid #ccc; background: #fff; }
+textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover { border-color: #aaa; }
+textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus { border-color: #888; outline: 1px solid #666; }
+input, select { cursor: pointer; }
+input[type='text'] { cursor: text; }
+
+
+/* paginator */
+.pagination {
+    padding: 0 0 1em;
+    margin-left: 0px;
+  }
+.pagination a {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #fff;
+    text-decoration: none;
+  }
+.pagination a:hover, .pagination a:active {
+    border: 1px solid #eee;
+    color: #000;
+  }
+.pagination span.current {
+    padding: 2px 5px 2px 5px;
+    margin: 2px;
+    border: 1px solid #eee;
+    font-weight: bold;
+  }
+.pagination span.disabled {
+    padding: 2px 5px 2px 5px;
+    margin: 2px 0;
+    border: 1px solid #fff;
+    color: #bbb;
+	display: none;
+  }
+
+
+/* typography overrides */
+
+
+h3 { font-size: 1.5em; line-height: 1; margin: .2em 0; }
+
+
+
+
+
+
+/* grid overrides */
+
+/* Use this to create a horizontal ruler across a column. */
+
+
+hr {
+  background: #eee; 
+  color: #999;
+  clear: both; 
+  float: none; 
+  width: 100%; 
+  height: .1em;
+  margin: 0 0 1.4em;
+  border: none; 
+}
+
+/* Border on right hand side of a column. */
+
+
+.border {
+  padding-right: 4px;
+  margin-right: 5px;
+  border-right: 1px solid green;
+}
+
+/* Border with more whitespace, spans one column. */
+.colborder {
+  padding-right: 24px;
+  margin-right: 25px;
+  border-right: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* errors */
+
+.fieldWithErrors input, .fieldWithErrors select, .fieldWithErrors textarea, .fieldWithErrors file {
+  border: 1px solid red;
+
+}
+
+div.validation-failed input, div.validation-failed select, div.validation-failed textarea {
+  border: 1px solid red;
+
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+	
+#errorExplanation {
+  width: 400px;
+  border: 1px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: .5em;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  padding: .8em 0;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+#errorExplanation ul {
+  padding-left: 4em;
+}

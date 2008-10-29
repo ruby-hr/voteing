@@ -1,0 +1,24 @@
+<h1>Editing candidate</h1>
+
+<% form_for(@candidate) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </p>
+  <p>
+    <%= f.label :votes %><br />
+    <%= f.text_field :votes %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @candidate %> |
+<%= link_to 'Back', candidates_path %>

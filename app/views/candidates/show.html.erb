@@ -1,0 +1,18 @@
+<p>
+  <b>First name:</b>
+  <%=h @candidate.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%=h @candidate.last_name %>
+</p>
+
+<p>
+  <b>Votes:</b>
+  <%=h @candidate.votes %>
+</p>
+
+
+<%= link_to 'Edit', edit_candidate_path(@candidate) %> |
+<%= link_to 'Back', candidates_path %>

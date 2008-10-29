@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title><%= 'Izbori 2008 - ' + @page_title ||= "Dobrodošli"-%></title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+<%= javascript_include_tag 'prototype', 'effects', 'application' -%>
+<%= yield :head -%>
+
+
+<!-- Framework CSS -->
+<%= stylesheet_link_tag 'blueprint/screen.css', :media => "screen, projection" -%>
+<%= stylesheet_link_tag 'blueprint/print.css', :media => "print" %>
+<!--[if lt IE 7]>
+	<%= stylesheet_link_tag 'blueprint/ie.css', :media => "screen, projection" -%>	
+<![endif]-->
+
+
+<%= stylesheet_link_tag 'app', :media => "screen" -%>
+
+</head>
+<body>
+<div class="container">
+	<hr/>	
+<h1>Izbori 2008</h1>
+<!-- header -->
+<div id="header">
+
+</div>
+<!-- end header -->
+<hr/>

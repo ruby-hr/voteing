@@ -1,0 +1,8 @@
+<% if self.flash[:notice] #flash.any? -%>
+	<div class="notice"><strong><%= self.flash[:notice] -%></strong></div><% self.flash.clear -%>
+<% end -%>
+
+
+<% if self.flash[:error] #flash.any? -%>
+	<div class="error"><strong><%= self.flash[:error] -%></strong></div><% self.flash.clear -%>
+<% end -%>
