@@ -4626,3 +4626,694 @@ Rendered layouts/_header (33.7ms)
 Rendered layouts/_flash (0.5ms)
 Rendered layouts/_footer (0.4ms)
 Completed in 119ms (View: 57, DB: 31) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:14:06) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--59ebfe0fdc229acf91efccb704acff376400c4f2
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (19.7ms)[0m   [0;1mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (22.1ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 96ms (View: 42, DB: 20) | 200 OK [http://localhost/]
+
+
+Processing CandidatesController#new (for 127.0.0.1 at 2008-10-29 21:14:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--59ebfe0fdc229acf91efccb704acff376400c4f2
+  Parameters: {"action"=>"new", "controller"=>"candidates"}
+Rendering template within layouts/home
+Rendering candidates/new
+Rendered layouts/_header (8.2ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 82ms (View: 37, DB: 0) | 200 OK [http://localhost/candidates/new]
+
+
+Processing CandidatesController#create (for 127.0.0.1 at 2008-10-29 21:14:20) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"commit"=>"Create", "candidate"=>{"votes"=>"11", "first_name"=>"Branimir", "last_name"=>"Šloser"}, "authenticity_token"=>"2413bdf2f4d86c50807b694402d28412c0dcce51", "action"=>"create", "controller"=>"candidates"}
+  [4;36;1mCandidate Create (0.7ms)[0m   [0;1mINSERT INTO "candidates" ("updated_at", "votes", "first_name", "last_name", "created_at") VALUES('2008-10-29 20:14:20', 11, 'Branimir', 'Šloser', '2008-10-29 20:14:20')[0m
+Redirected to #<Candidate:0xb673628c>
+Completed in 84ms (DB: 1) | 302 Found [http://localhost/candidates]
+
+
+Processing CandidatesController#show (for 127.0.0.1 at 2008-10-29 21:14:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIihDYW5kaWRhdGUgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7B0Y=--b2133fb797c1289b0689f9e5900030b3d0e45c71
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"candidates"}
+  [4;35;1mCandidate Load (0.8ms)[0m   [0mSELECT * FROM "candidates" WHERE ("candidates"."id" = 1) [0m
+Rendering template within layouts/home
+Rendering candidates/show
+Rendered layouts/_header (6.3ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 41ms (View: 25, DB: 1) | 200 OK [http://localhost/candidates/1]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:14:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewY6C25vdGljZVQ=--1e7f25387897c60167a03337fde42baaf878d223
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (1.3ms)[0m   [0;1mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (6.3ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 49ms (View: 32, DB: 2) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#new (for 127.0.0.1 at 2008-10-29 21:14:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"new", "controller"=>"candidates"}
+Rendering template within layouts/home
+Rendering candidates/new
+Rendered layouts/_header (14.0ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 64ms (View: 39, DB: 0) | 200 OK [http://localhost/candidates/new]
+
+
+Processing CandidatesController#create (for 127.0.0.1 at 2008-10-29 21:14:35) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"commit"=>"Create", "candidate"=>{"votes"=>"22", "first_name"=>"Pero", "last_name"=>"Perić"}, "authenticity_token"=>"2413bdf2f4d86c50807b694402d28412c0dcce51", "action"=>"create", "controller"=>"candidates"}
+  [4;36;1mCandidate Create (0.6ms)[0m   [0;1mINSERT INTO "candidates" ("updated_at", "votes", "first_name", "last_name", "created_at") VALUES('2008-10-29 20:14:35', 22, 'Pero', 'Perić', '2008-10-29 20:14:35')[0m
+Redirected to #<Candidate:0xb63cad78>
+Completed in 81ms (DB: 1) | 302 Found [http://localhost/candidates]
+
+
+Processing CandidatesController#show (for 127.0.0.1 at 2008-10-29 21:14:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIihDYW5kaWRhdGUgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7B0Y=--b2133fb797c1289b0689f9e5900030b3d0e45c71
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"candidates"}
+  [4;35;1mCandidate Load (0.9ms)[0m   [0mSELECT * FROM "candidates" WHERE ("candidates"."id" = 2) [0m
+Rendering template within layouts/home
+Rendering candidates/show
+Rendered layouts/_header (6.6ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 65ms (View: 36, DB: 1) | 200 OK [http://localhost/candidates/2]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:14:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewY6C25vdGljZVQ=--1e7f25387897c60167a03337fde42baaf878d223
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (22.9ms)[0m   [0;1mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (7.5ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 231ms (View: 37, DB: 24) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#vote (for 127.0.0.1 at 2008-10-29 21:14:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"vote", "id"=>"2", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (0.8ms)[0m   [0;1mSELECT * FROM "candidates" WHERE ("candidates"."id" = 2) [0m
+  [4;35;1mCandidate Update (0.6ms)[0m   [0mUPDATE "candidates" SET "votes" = 23, "updated_at" = '2008-10-29 20:14:42' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/candidates
+Completed in 38ms (DB: 1) | 302 Found [http://localhost/candidates/2/vote]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:14:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (1.6ms)[0m   [0;1mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (8.5ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 57ms (View: 39, DB: 3) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#vote (for 127.0.0.1 at 2008-10-29 21:14:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"vote", "id"=>"1", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (0.9ms)[0m   [0;1mSELECT * FROM "candidates" WHERE ("candidates"."id" = 1) [0m
+  [4;35;1mCandidate Update (0.5ms)[0m   [0mUPDATE "candidates" SET "votes" = 12, "updated_at" = '2008-10-29 20:14:45' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/candidates
+Completed in 52ms (DB: 1) | 302 Found [http://localhost/candidates/1/vote]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:14:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (1.5ms)[0m   [0;1mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (6.6ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 53ms (View: 36, DB: 2) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#vote (for 127.0.0.1 at 2008-10-29 21:14:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"vote", "id"=>"2", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (0.7ms)[0m   [0;1mSELECT * FROM "candidates" WHERE ("candidates"."id" = 2) [0m
+  [4;35;1mCandidate Update (0.5ms)[0m   [0mUPDATE "candidates" SET "votes" = 24, "updated_at" = '2008-10-29 20:14:47' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/candidates
+Completed in 28ms (DB: 1) | 302 Found [http://localhost/candidates/2/vote]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:14:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (1.5ms)[0m   [0;1mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (15.2ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 87ms (View: 70, DB: 2) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#unvote (for 127.0.0.1 at 2008-10-29 21:14:51) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"authenticity_token"=>"2413bdf2f4d86c50807b694402d28412c0dcce51", "_method"=>"delete", "action"=>"unvote", "id"=>"2", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (0.8ms)[0m   [0;1mSELECT * FROM "candidates" WHERE ("candidates"."id" = 2) [0m
+  [4;35;1mCandidate Update (0.5ms)[0m   [0mUPDATE "candidates" SET "votes" = 23, "updated_at" = '2008-10-29 20:14:51' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/candidates
+Completed in 182ms (DB: 1) | 302 Found [http://localhost/candidates/2/unvote]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:14:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (2.6ms)[0m   [0;1mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (7.8ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 84ms (View: 51, DB: 3) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#show (for 127.0.0.1 at 2008-10-29 21:14:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (0.8ms)[0m   [0;1mSELECT * FROM "candidates" WHERE ("candidates"."id" = 2) [0m
+Rendering template within layouts/home
+Rendering candidates/show
+Rendered layouts/_header (8.2ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 51ms (View: 34, DB: 1) | 200 OK [http://localhost/candidates/2]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:14:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;35;1mCandidate Load (1.6ms)[0m   [0mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (15.0ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 79ms (View: 62, DB: 2) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#edit (for 127.0.0.1 at 2008-10-29 21:14:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"candidates"}
+  [4;35;1mCandidate Load (0.8ms)[0m   [0mSELECT * FROM "candidates" WHERE ("candidates"."id" = 2) [0m
+Rendering template within layouts/home
+Rendering candidates/edit
+Rendered layouts/_header (6.7ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 45ms (View: 30, DB: 1) | 200 OK [http://localhost/candidates/2/edit]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:15:00) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (1.5ms)[0m   [0;1mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (9.6ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 53ms (View: 35, DB: 2) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#new (for 127.0.0.1 at 2008-10-29 21:15:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"new", "controller"=>"candidates"}
+Rendering template within layouts/home
+Rendering candidates/new
+Rendered layouts/_header (6.7ms)
+Rendered layouts/_flash (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 54ms (View: 36, DB: 0) | 200 OK [http://localhost/candidates/new]
+
+
+Processing CandidatesController#create (for 127.0.0.1 at 2008-10-29 21:15:08) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"commit"=>"Create", "candidate"=>{"votes"=>"0", "first_name"=>"pero", "last_name"=>"aa"}, "authenticity_token"=>"2413bdf2f4d86c50807b694402d28412c0dcce51", "action"=>"create", "controller"=>"candidates"}
+  [4;36;1mCandidate Create (0.5ms)[0m   [0;1mINSERT INTO "candidates" ("updated_at", "votes", "first_name", "last_name", "created_at") VALUES('2008-10-29 20:15:08', 0, 'pero', 'aa', '2008-10-29 20:15:08')[0m
+Redirected to #<Candidate:0xb63107c0>
+Completed in 86ms (DB: 0) | 302 Found [http://localhost/candidates]
+
+
+Processing CandidatesController#show (for 127.0.0.1 at 2008-10-29 21:15:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIihDYW5kaWRhdGUgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7B0Y=--b2133fb797c1289b0689f9e5900030b3d0e45c71
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"candidates"}
+  [4;35;1mCandidate Load (0.9ms)[0m   [0mSELECT * FROM "candidates" WHERE ("candidates"."id" = 3) [0m
+Rendering template within layouts/home
+Rendering candidates/show
+Rendered layouts/_header (17.4ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 79ms (View: 52, DB: 1) | 200 OK [http://localhost/candidates/3]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:15:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewY6C25vdGljZVQ=--1e7f25387897c60167a03337fde42baaf878d223
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (1.9ms)[0m   [0;1mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (7.2ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 59ms (View: 40, DB: 3) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#new (for 127.0.0.1 at 2008-10-29 21:15:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"new", "controller"=>"candidates"}
+Rendering template within layouts/home
+Rendering candidates/new
+Rendered layouts/_header (7.8ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 53ms (View: 34, DB: 0) | 200 OK [http://localhost/candidates/new]
+
+
+Processing CandidatesController#create (for 127.0.0.1 at 2008-10-29 21:15:19) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"commit"=>"Create", "candidate"=>{"votes"=>"0", "first_name"=>"Pero", "last_name"=>""}, "authenticity_token"=>"2413bdf2f4d86c50807b694402d28412c0dcce51", "action"=>"create", "controller"=>"candidates"}
+Rendering template within layouts/home
+Rendering candidates/new
+Rendered layouts/_header (7.8ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 118ms (View: 31, DB: 0) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#create (for 127.0.0.1 at 2008-10-29 21:15:24) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"commit"=>"Create", "candidate"=>{"votes"=>"0", "first_name"=>"", "last_name"=>""}, "authenticity_token"=>"2413bdf2f4d86c50807b694402d28412c0dcce51", "action"=>"create", "controller"=>"candidates"}
+Rendering template within layouts/home
+Rendering candidates/new
+Rendered layouts/_header (7.5ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 32, DB: 0) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#create (for 127.0.0.1 at 2008-10-29 21:15:30) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"commit"=>"Create", "candidate"=>{"votes"=>"0", "first_name"=>"Pero", "last_name"=>"Perić"}, "authenticity_token"=>"2413bdf2f4d86c50807b694402d28412c0dcce51", "action"=>"create", "controller"=>"candidates"}
+  [4;36;1mCandidate Create (0.5ms)[0m   [0;1mINSERT INTO "candidates" ("updated_at", "votes", "first_name", "last_name", "created_at") VALUES('2008-10-29 20:15:30', 0, 'Pero', 'Perić', '2008-10-29 20:15:30')[0m
+Redirected to #<Candidate:0xb639ab50>
+Completed in 64ms (DB: 0) | 302 Found [http://localhost/candidates]
+
+
+Processing CandidatesController#show (for 127.0.0.1 at 2008-10-29 21:15:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIihDYW5kaWRhdGUgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7B0Y=--b2133fb797c1289b0689f9e5900030b3d0e45c71
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"candidates"}
+  [4;35;1mCandidate Load (0.8ms)[0m   [0mSELECT * FROM "candidates" WHERE ("candidates"."id" = 4) [0m
+Rendering template within layouts/home
+Rendering candidates/show
+Rendered layouts/_header (18.6ms)
+Rendered layouts/_flash (7.9ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 70ms (View: 55, DB: 1) | 200 OK [http://localhost/candidates/4]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:15:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewY6C25vdGljZVQ=--1e7f25387897c60167a03337fde42baaf878d223
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (2.3ms)[0m   [0;1mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;35;1mSQL (4.6ms)[0m   [0mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (8.2ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 285ms (View: 62, DB: 7) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#destroy (for 127.0.0.1 at 2008-10-29 21:15:37) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"authenticity_token"=>"2413bdf2f4d86c50807b694402d28412c0dcce51", "_method"=>"delete", "action"=>"destroy", "id"=>"4", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (0.8ms)[0m   [0;1mSELECT * FROM "candidates" WHERE ("candidates"."id" = 4) [0m
+  [4;35;1mCandidate Destroy (0.5ms)[0m   [0m DELETE FROM "candidates"
+ WHERE "id" = 4
+[0m
+Redirected to http://localhost:3000/candidates
+Completed in 36ms (DB: 1) | 302 Found [http://localhost/candidates/4]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:15:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (1.9ms)[0m   [0;1mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (7.3ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 71ms (View: 45, DB: 3) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:16:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+
+
+ArgumentError (wrong number of arguments (0 for 1)):
+    /app/models/candidate.rb:3:in `scope'
+    /app/models/candidate.rb:3
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:368:in `load_without_new_constant_marking'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:368:in `load_file'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:367:in `load_file'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:248:in `require_or_load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:413:in `load_missing_constant'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:77:in `const_missing'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:89:in `const_missing'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:93:in `const_missing'
+    /app/controllers/candidates_controller.rb:28:in `index'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1213:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1213:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb:48:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.2.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/session_management.rb:134:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:401:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:180:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:107:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:120:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:129:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:36:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load_without_new_constant_marking'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/server.rb:49
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_trace (103.0ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_request_and_response (16.0ms)
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:16:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+
+
+ArgumentError (wrong number of arguments (0 for 1)):
+    /app/models/candidate.rb:3:in `scope'
+    /app/models/candidate.rb:3
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:368:in `load_without_new_constant_marking'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:368:in `load_file'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:367:in `load_file'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:248:in `require_or_load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:413:in `load_missing_constant'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:77:in `const_missing'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:89:in `const_missing'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:93:in `const_missing'
+    /app/controllers/candidates_controller.rb:28:in `index'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1213:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:1213:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.2.0/lib/active_record/connection_adapters/abstract/query_cache.rb:48:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.2.0/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:533:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/session_management.rb:134:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/base.rb:401:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:180:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:107:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:120:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:119:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:129:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/dispatcher.rb:36:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load_without_new_constant_marking'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:141:in `load'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:507:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.0/lib/active_support/dependencies.rb:148:in `require'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.2.0/lib/commands/server.rb:49
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_trace (348.8ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/_request_and_response (1.7ms)
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:17:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (25.0ms)[0m   [0;1mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (30.5ms)
+Rendered layouts/_flash (1.5ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 130ms (View: 73, DB: 26) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#new (for 127.0.0.1 at 2008-10-29 21:17:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"new", "controller"=>"candidates"}
+Rendering template within layouts/home
+Rendering candidates/new
+Rendered layouts/_header (6.9ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 44ms (View: 29, DB: 0) | 200 OK [http://localhost/candidates/new]
+
+
+Processing CandidatesController#create (for 127.0.0.1 at 2008-10-29 21:17:47) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"commit"=>"Create", "candidate"=>{"votes"=>"0", "first_name"=>"pero", "last_name"=>"aaa"}, "authenticity_token"=>"2413bdf2f4d86c50807b694402d28412c0dcce51", "action"=>"create", "controller"=>"candidates"}
+  [4;36;1mCandidate Exists (0.4ms)[0m   [0;1mSELECT "candidates".id FROM "candidates" WHERE ("candidates"."first_name" = 'pero' AND "candidates".last_name = 'aaa') LIMIT 1[0m
+  [4;35;1mCandidate Create (0.9ms)[0m   [0mINSERT INTO "candidates" ("updated_at", "votes", "first_name", "last_name", "created_at") VALUES('2008-10-29 20:17:47', 0, 'pero', 'aaa', '2008-10-29 20:17:47')[0m
+Redirected to #<Candidate:0xb64e2eb8>
+Completed in 90ms (DB: 1) | 302 Found [http://localhost/candidates]
+
+
+Processing CandidatesController#show (for 127.0.0.1 at 2008-10-29 21:17:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIihDYW5kaWRhdGUgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7B0Y=--b2133fb797c1289b0689f9e5900030b3d0e45c71
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (0.8ms)[0m   [0;1mSELECT * FROM "candidates" WHERE ("candidates"."id" = 5) [0m
+Rendering template within layouts/home
+Rendering candidates/show
+Rendered layouts/_header (14.3ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 60ms (View: 43, DB: 1) | 200 OK [http://localhost/candidates/5]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:17:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewY6C25vdGljZVQ=--1e7f25387897c60167a03337fde42baaf878d223
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;35;1mCandidate Load (2.7ms)[0m   [0mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (6.7ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 106ms (View: 87, DB: 3) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#new (for 127.0.0.1 at 2008-10-29 21:17:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"action"=>"new", "controller"=>"candidates"}
+Rendering template within layouts/home
+Rendering candidates/new
+Rendered layouts/_header (7.9ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 199ms (View: 185, DB: 0) | 200 OK [http://localhost/candidates/new]
+
+
+Processing CandidatesController#create (for 127.0.0.1 at 2008-10-29 21:18:00) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"commit"=>"Create", "candidate"=>{"votes"=>"0", "first_name"=>"Pero", "last_name"=>"Perić"}, "authenticity_token"=>"2413bdf2f4d86c50807b694402d28412c0dcce51", "action"=>"create", "controller"=>"candidates"}
+  [4;35;1mCandidate Exists (0.7ms)[0m   [0mSELECT "candidates".id FROM "candidates" WHERE ("candidates"."first_name" = 'Pero' AND "candidates".last_name = 'Perić') LIMIT 1[0m
+Rendering template within layouts/home
+Rendering candidates/new
+Rendered layouts/_header (7.7ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 74ms (View: 34, DB: 1) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#create (for 127.0.0.1 at 2008-10-29 21:18:13) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"commit"=>"Create", "candidate"=>{"votes"=>"0", "first_name"=>"Peroo", "last_name"=>"Perić"}, "authenticity_token"=>"2413bdf2f4d86c50807b694402d28412c0dcce51", "action"=>"create", "controller"=>"candidates"}
+  [4;36;1mCandidate Exists (0.4ms)[0m   [0;1mSELECT "candidates".id FROM "candidates" WHERE ("candidates"."first_name" = 'Peroo' AND "candidates".last_name = 'Perić') LIMIT 1[0m
+  [4;35;1mCandidate Create (1.0ms)[0m   [0mINSERT INTO "candidates" ("updated_at", "votes", "first_name", "last_name", "created_at") VALUES('2008-10-29 20:18:13', 0, 'Peroo', 'Perić', '2008-10-29 20:18:13')[0m
+Redirected to #<Candidate:0xb66aa32c>
+Completed in 69ms (DB: 1) | 302 Found [http://localhost/candidates]
+
+
+Processing CandidatesController#show (for 127.0.0.1 at 2008-10-29 21:18:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlIihDYW5kaWRhdGUgd2FzIHN1Y2Nlc3NmdWxseSBjcmVhdGVkLgY6CkB1c2VkewY7B0Y=--b2133fb797c1289b0689f9e5900030b3d0e45c71
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"candidates"}
+  [4;36;1mCandidate Load (0.8ms)[0m   [0;1mSELECT * FROM "candidates" WHERE ("candidates"."id" = 6) [0m
+Rendering template within layouts/home
+Rendering candidates/show
+Rendered layouts/_header (6.8ms)
+Rendered layouts/_flash (0.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 61ms (View: 34, DB: 1) | 200 OK [http://localhost/candidates/6]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:18:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewY6C25vdGljZVQ=--1e7f25387897c60167a03337fde42baaf878d223
+  Parameters: {"action"=>"index", "controller"=>"candidates"}
+  [4;35;1mCandidate Load (2.4ms)[0m   [0mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (8.0ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 73ms (View: 51, DB: 3) | 200 OK [http://localhost/candidates]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:18:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"commit"=>"sortiraj", "field"=>"first_name", "action"=>"index", "controller"=>"candidates"}
+  [4;35;1mCandidate Load (2.3ms)[0m   [0mSELECT * FROM "candidates" ORDER BY first_name asc[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (19.2ms)
+Rendered layouts/_flash (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 147ms (View: 82, DB: 3) | 200 OK [http://localhost/candidates?field=first_name&commit=sortiraj]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:18:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"commit"=>"sortiraj", "field"=>"last_name", "action"=>"index", "controller"=>"candidates"}
+  [4;35;1mCandidate Load (20.9ms)[0m   [0mSELECT * FROM "candidates" ORDER BY last_name asc[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (6.3ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 137ms (View: 82, DB: 21) | 200 OK [http://localhost/candidates?field=last_name&commit=sortiraj]
+
+
+Processing CandidatesController#index (for 127.0.0.1 at 2008-10-29 21:18:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZGFiNGI3YTZjMmY3ZDdkMjNiYThkZmI4YzkyZjk2YTciCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--a7e14f34fe95cb3c0aca2a43e788cfdd6250f7c4
+  Parameters: {"commit"=>"sortiraj", "field"=>"votes", "action"=>"index", "controller"=>"candidates"}
+  [4;35;1mCandidate Load (2.7ms)[0m   [0mSELECT * FROM "candidates" ORDER BY votes desc[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT sum("candidates".votes) AS sum_votes FROM "candidates" [0m
+Rendering template within layouts/home
+Rendering candidates/index
+Rendered layouts/_header (7.2ms)
+Rendered layouts/_flash (0.4ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 86ms (View: 62, DB: 3) | 200 OK [http://localhost/candidates?field=votes&commit=sortiraj]
